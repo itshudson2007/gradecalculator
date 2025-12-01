@@ -137,7 +137,7 @@ def calculate(students_by_id, name_to_id, assignments_by_id):
     print(f"{rounded_grade}%")
 
 
-def statistics(assignments_by_id, name_to_id, students_by_id):
+def calculate_stats(assignments_by_id, name_to_id, students_by_id):
     name = input("What is the assignment name: ")
 
     assign = name_to_id.get(name)
@@ -221,7 +221,7 @@ def main():
     if selection == '1':
         calculate(students_by_id, student_name_to_id, assignments_by_id)
     elif selection == '2':
-        statistics(assignments_by_id, assignment_name_to_id, students_by_id)
+        calculate_stats(assignments_by_id, assignment_name_to_id, students_by_id)
     elif selection == '3':
         graph(assignments_by_id, assignment_name_to_id, students_by_id)
     else:
