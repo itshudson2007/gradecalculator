@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import statistics
 import os
+import math
 
 class Student:
     def __init__(self, id, name):
@@ -159,7 +160,7 @@ def calculate_stats(assignments_by_id, name_to_id, students_by_id):
 
     minimum = round(min(scores))
     maximum = round(max(scores))
-    average = round(statistics.mean(scores))
+    average = math.trunc(statistics.mean(scores))
 
     print(f"Min: {minimum}%")
     print(f"Avg: {average}%")
