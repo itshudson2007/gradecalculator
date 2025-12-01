@@ -199,9 +199,6 @@ def graph(assignments_by_id, name_to_id, students_by_id):
 
     plt.show()
 
-
-# --- 4. Main Execution Function ---
-
 def main():
     students_by_id, student_name_to_id = load_students()
     assignments_by_id, assignment_name_to_id = load_assignments()
